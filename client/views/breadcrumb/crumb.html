@@ -1,0 +1,9 @@
+<template name="breadcrumb">
+  <ol class="breadcrumb">
+    {{#each crumbs}}
+    <li>
+      <a href="{{ path }}">{{ title }}</a>
+    </li>
+    {{/each}}
+  </ol>
+</template>
