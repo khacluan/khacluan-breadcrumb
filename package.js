@@ -1,6 +1,6 @@
 Package.describe({
   summary: "breadcrumb for your meteor application",
-  version: "0.0.6",
+  version: "0.0.8",
   git: "git@github.com:khacluan/khacluan-breadcrumb.git"
 });
 
@@ -8,6 +8,10 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.3.1');
 
   api.use([
+    'deps',
+    'templating',
+    'handlebars',
+    'less',
     "coffeescript",
   ], ["client", "server"]);
 
