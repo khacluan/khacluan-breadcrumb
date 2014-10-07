@@ -1,6 +1,6 @@
 Package.describe({
   summary: "breadcrumb for your meteor application",
-  version: "0.0.8",
+  version: "0.0.10",
   git: "git@github.com:khacluan/khacluan-breadcrumb.git"
 });
 
