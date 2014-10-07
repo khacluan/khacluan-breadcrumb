@@ -9,7 +9,8 @@ Package.onUse(function(api) {
   api.addFiles([
     'client/breadcrumb.coffee',
     'client/helpers.coffee',
-    'client/breadcrumb/crumb.coffee'
+    'client/views/breadcrumb/crumb.coffee',
+    'client/views/breadcrumb/crumb.html'
   ], 'client');
 
   api.addFiles('server/breadcrumb.coffee', 'server');
