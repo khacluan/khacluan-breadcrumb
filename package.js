@@ -1,6 +1,6 @@
 Package.describe({
   summary: "breadcrumb for your meteor application",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "git@github.com:khacluan/khacluan-breadcrumb.git"
 });
 
@@ -14,5 +14,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('khacluan:breadcrumb');
-  api.addFiles('breadcrumb-tests.js');
+  api.addFiles('test/breadcrumb-tests.js');
 });

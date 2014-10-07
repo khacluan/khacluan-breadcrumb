@@ -6,3 +6,5 @@ Breadcrumb =
 
   getCrumbs: ->
     return crumbs
+
+@Breadcrumb = Breadcrumb
