@@ -1,6 +1,6 @@
 Package.describe({
   summary: "breadcrumb for your meteor application",
-  version: "0.0.11",
+  version: "0.0.15",
   git: "git@github.com:khacluan/khacluan-breadcrumb.git"
 });
 
@@ -8,14 +8,10 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.3.1');
 
   api.use([
-    'ui',
-    'underscore',
-    'deps',
     'templating',
-    'handlebars',
     'less',
     "coffeescript",
-  ], ["client", "server"]);
+  ], "client");
 
   api.addFiles([
     'client/breadcrumb.coffee',
@@ -24,6 +20,7 @@ Package.onUse(function(api) {
     'client/views/breadcrumb/crumb.html'
   ], 'client');
 
+  api.use(['coffeescript'], 'server');
   api.addFiles('server/breadcrumb.coffee', 'server');
 
   api.export('Breadcrumb', ['client', 'server']);
