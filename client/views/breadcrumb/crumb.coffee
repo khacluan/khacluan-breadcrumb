@@ -1,3 +1,3 @@
-Template.breadcrumb.helpers
+Template.breadcrumb.rendered
   crumbs: () ->
     Breadcrumb.getCrumbs()
